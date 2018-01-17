@@ -33,7 +33,7 @@ void _arraylist_double(arraylist **arr_ls){
     for (i = 0; i < (*arr_ls)->_c_idx; i++)
         arraylist_add(&arr_ls_new, arraylist_get(arr_ls, i)); // copy everything over
     printf("an element of new arr is %d\n", arraylist_get(&arr_ls_new, 99));
-    arraylist **tmp = arr_ls;
-    arraylist_free(arr_ls);
-    arr_ls = &arr_ls_new;
+    arraylist *tmp = *arr_ls;
+    *arr_ls = arr_ls_new;
+    arraylist_free(&tmp);
 }

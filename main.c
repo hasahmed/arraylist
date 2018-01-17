@@ -8,13 +8,8 @@ int main(){
         arraylist_add(&arr_ls, i * 20);
 
     printf("the size of the array %d\n", arr_ls->size);
-    /*_arraylist_double(&arr_ls);*/
+    _arraylist_double(&arr_ls);
     printf("the size of the array %d\n", arr_ls->size);
     arraylist_free(&arr_ls);
-
-    /*printf("%d\n", arraylist_get(&arr_ls, 11));*/
-    /*arraylist_free(&arr_ls);*/
-    /*printf("%d\n", arraylist_get(arr_ls, 98));*/
-    /*arraylist_free(arr_ls);*/
     return 0;
 }
