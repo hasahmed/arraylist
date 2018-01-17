@@ -1,0 +1,5 @@
+Session.vim
+*.o
+test
+*.swp
+*.swo
