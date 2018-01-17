@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -c -g
-LDFLAGS = ''
+LDFLAGS =
 EXE = test
 
 OBJS = arraylist.o main.o
