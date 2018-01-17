@@ -11,6 +11,6 @@ arraylist* arraylist_new(int size);
 void arraylist_free(arraylist **arr_ls);
 void arraylist_add(arraylist **arr_ls, int element);
 int arraylist_get(arraylist **arr_ls, int index);
-//void _arraylist_double(arraylist **arr_ls);
+void _arraylist_double(arraylist **arr_ls);
 
 #endif // _ARRAYLIST_H_
